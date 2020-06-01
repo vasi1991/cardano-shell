@@ -20,7 +20,7 @@ let
       name = "cardano-shell";
       src = ../.;
     };
-    ghc = buildPackages.haskell-nix.compiler.${compiler};
+    compiler-nix-name = compiler;
     modules = [
 
       # Allow reinstallation of Win32
